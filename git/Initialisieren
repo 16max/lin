@@ -1,0 +1,29 @@
+GITHUB.COM 
+	neues Repository anlegen 
+
+ 
+HOST 
+#Verzeichnis anlegen 
+	mkdir "linux" 
+
+#Ins Verzeichnis wechlsen 
+	cd linux 
+ 
+#Initialisieren eines neuen git Repositorys 
+	git init 
+ 
+#Erzeugen einer neuen Datei 
+	touch text.txt 
+ 
+#Datei text.txt wird ins neue Repository aufgenommen, d.h. unter Versionsverwaltung gestellt 
+	git add text.txt 
+ 
+#text.txt wird in den Bereich der Dateien geschoben, die mit dem Server	synchonisiert werden soll 
+	git commit -m 'Initialisierung' 
+ 
+#Das lokale Repository wird mit einem öffentlichen Repository verbunden; es wird dem bestehenden github Repository hinzugefügt 
+	git remote add origin https://github.com/16max/linux.git 
+ 
+#Änderungen auf dem lokalen Repository werden mit dem Stand auf dem Server verglichen und die neuere Version wird auf dem Server abgelegt 
+ 	git push -u origin master 
+

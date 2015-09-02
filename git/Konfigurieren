@@ -1,0 +1,10 @@
+#der bei github.com hinterlegte Benutzer 
+ 	git config --global user.name "16max" 
+
+#die bei github.com hinterlegte EMail-Adresse 
+	git config --global user.email "schelemax@g16hh.de" 
+//--global = Einstellungen gelten für alle git-Anwendungen dieses Benutzer auf diesem PC 
+ 
+#Damit nicht bei jedem push Benutzer und Passwort eingegeben werden muss. Daten werden für 30.000 Sekunden gespeichert 
+	git config --global credential.helper 'cache --timeout=30000' 
+
