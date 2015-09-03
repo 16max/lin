@@ -5,5 +5,7 @@
 	# -A steht für alle geänderten, hinzugefügten, gelöschten Dateien oder Ordner
 
 3. git commit -am 'Kommentar'
+	# Bestätigung der Änderungen lokal
 
 4. git push origin master
+	#Hochladen der neuen Version auf den Server
