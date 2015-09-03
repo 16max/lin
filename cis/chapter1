@@ -1,66 +1,88 @@
-See section 1.3.3 - Open source means:
-	You can view the software's source code
-	You can modify the software's source code
-
-See section 1.3.3 - Most of the tools that are part of Linux systems come from:
-
-
-See section 1.3 - UNIX was originally invented at:
-
-
-See section 1.3.3 - A license where you dont have access to the source code is called:
+A license where you don't have access to the source code is called:
 	Closed source
 
-See section 1.3.4 - Which distributions are made by, or clones of, Red Hat?
-	Fedora
-	CentOS
-
-See section 1.3.2 - Applications make requests to the kernel and receive resources, such as memory, CPU, and disk in return.
-	True
-
-See section 1.4.1 - A release cycle:
-	Describes how often updates to the software come out
-
-See section 1.4.1 - A maintenance cycle:
+A maintenance cycle:
 	Describes how long a version of software will be supported
 
-See section 1.4.1 - Software is backward compatible if:
-	It still supports old file formats or applications
+Apple's OS X is:
+	Certified as UNIX compatible
+	Derived from FreeBSD
+	Only compatible with Apple hardware
 
-See section 1.4.5 - Other commercial Unixes:
-	Are tied to there vendor's hardware
-	Are UNIX sertified
+Applications make requests to the kernel and receive resources, such as memory, CPU, and disk in return.
+	True
 
-See section 1.3.3 - Linux is written in:
+A release cycle:
+	Describes how often updates to the software come out
+
+If a software release is in a state in that it has many new features that have not been rigorously tested, it is typically referred to as beta software.
+True or False?
+	False
+
+Linux is not Unix because:
+	It hasn't undergone certification
+
+Linux is written in:
 	C
 
-See section 1.3.3 - Most of the tools that are part of Linux systems come from:
-	The GNU projekt
-
-See section 1.3.5 - The Linux platform that runs on mobile phones is called:
-	Android
-
-See section 1.3 - The bootloader job is to:
-	Load the kernel after the computer is prowered on
-
-See section 1.3.3 - Open source licences differ, but generally agree that:
-	You should have access to the source code of software
-	You should be able modify the software as you wish
-
-See section 1.4.3 - Apple OS X is:
-
-
-See section 1.3.1 - One of the jobs of the kernel is to:
-	Manage the systems resources
-
-See section 1.3 - Unix is:
-	An operating system
-	A trademark
-
-See section 1.4 - The most important consideration when choosing an operating system is:
-	What the computer will do
-
-See section 1.4.2 - Microsoft Windows:
+Microsoft Windows:
 	Has powerful scripting capabilities
 	Comes in desktop and server variants
 	Has built in virtualization
+
+Most of the tools that are part of Linux systems come from:
+	The GNU projekt
+
+One of the jobs of the kernel is to:
+	Manage the systems resources
+
+Open source licences differ, but generally agree that:
+	You should have access to the source code of software
+	You should be able modify the software as you wish
+
+Open source means:
+	You can view the software's source code
+	You can modify the software's source code
+
+Other commercial Unixes:
+	Are tied to there vendor's hardware
+	Are UNIX sertified
+
+Software is backward compatible if:
+	It still supports old file formats or applications
+
+Source code refers to:
+	A human readable version of computer software
+
+The bootloader job is to:
+	Load the kernel after the computer is prowered on
+
+The Linux platform that runs on mobile phones is called:
+	Android
+
+The most important consideration when choosing an operating system is:
+	What the computer will do
+
+Ubuntu is derived from which distribution?
+	Debian
+
+UNIX is:
+	An operating system
+	A trademark
+
+UNIX was originally invented at:
+	AT&T Bell Labs
+
+What does a distribution provide to add and remove software from the system?
+	Package manager
+
+When choosing a distribution of Linux, you should consider:
+	Which distributions are supported by the software you need to run
+	If you need support on the distribution itself
+	The maintenance cycle of the distribution
+	Whether or not the distribution is under active development
+	Which management tools are provided by the distribution
+
+Which distributions are made by, or clones of, Red Hat?
+	Fedora
+	CentOS
