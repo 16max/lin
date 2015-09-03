@@ -26,4 +26,3 @@ HOST
  
 #Änderungen auf dem lokalen Repository werden mit dem Stand auf dem Server verglichen und die neuere Version wird auf dem Server abgelegt 
  	git push -u origin master 
-

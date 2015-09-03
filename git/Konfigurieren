@@ -7,4 +7,3 @@
  
 #Damit nicht bei jedem push Benutzer und Passwort eingegeben werden muss. Daten werden für 30.000 Sekunden gespeichert 
 	git config --global credential.helper 'cache --timeout=30000' 
-
