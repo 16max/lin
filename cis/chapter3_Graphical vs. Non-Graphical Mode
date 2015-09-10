@@ -1,0 +1,16 @@
+graphical mode
+	# Programme werden in Fenstern ausgeführt; können vergrößert und verkleinert werden
+	# man kann mehrere shells gleichzeitig geöffnet haben
+	# Login ist grafisch; nach erfolgreichem Einloggen landet man auf dem Desktop von dem aus man Programme starten kann
+
+	# Kommandozeile heißt meist: terminal oder x-term
+
+non-graphical mode
+	# Login basiert auf der Komandozeile; nach erfolreichem Einloggen kommt man direkt in die shell
+	# es gibt keine Fenster, die man verschieben kann; auch Browser, EMail-Clients und Texteditoren sind rein textbasiert
+	# viele Server werden im non-graphical mode betrieben um Resourcen zu sparen
+	# Befehl: 'w' zeigt einem wer eingeloggt ist
+	# es gibt keine Möglichkeit 'hoch zu scrollen' d.h. wenn man einen neuen Befehl eingibt verschiebt sich die Anzeige nach unten und frühere Befehle verschwinden
+
+Linux Mehrbenutzersystem
+	# um Probleme mit dem Festplatten- oder Arbeitsspeicherplatz zu bekommen sollte man darauf achten, den Benutzern nur eingeschränkte Rechte zu geben
