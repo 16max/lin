@@ -1,0 +1,88 @@
+****Befehĺe zum Wechsel in den Eingabemodus*
+i 		# Einfügen vor der aktuellen Cursorposition
+a 		# Einfügen nach der Cursorposition
+I 		# Zeilenanfang
+A 		# Zeilenende
+
+****Löschbefehle****************************
+dd		# löscht eine ganze Zeile
+p			# fügt Puffer nach aktuellen Position ein
+u 		# macht letzen Befehl rückgängig
+
+****Speichern*******************************
+:wq 	# Speichern und Verlassen der Datei
+:q! 	# Verlassen ohne Speichern und Nachfrage
+
+****Suchen**********************************
+/Suchmuster	# sucht nach Suchmuster
+n 					# sucht weiter
+N 					# sucht zurück
+gg					# springt zum Dateianfang
+G 					# springt ans Dateiende
+100G				# springt in Zeile 100
+
+
+vimtutor
+	# Datei, die Befehle für den vi-Editor erklärt und aufzeigt
+
+[:q!]
+# verwirft alle Änderungen und verlässt den Editor
+
+[x]
+# löscht das makierte Zeichen
+
+[i]
+# aktiviert den Einfügenmodus
+
+[Esc]# verlässt den Einfügemodus
+
+[A]
+# springt an das Ende der Zeile und aktiviert der Einfügemodus
+
+[:wq]
+# speichert alle Änderungen und verlässt den Editor
+
+[dw]
+# löscht das markierte Wort ab dem Cursor bis zum Anfang des nächsten Wortes
+
+[d$]
+# löscht die gesammte Zeile ab dem Cursor
+
+[de]
+# löscht das markierte Wort ab dem Cursor bis zum Ende des Wortes
+
+[0]
+# springt an den Anfang der Zeile
+
+[2w]
+# springt zwei Wörter weiter
+
+[3e]
+# springt ans Ende des dritten Wortes
+
+[d2w]
+# löscht die folgenden zwei Wörter
+
+[dd]
+# löscht die gesammte Zeilen
+
+[2dd]
+# löscht die nächsten zwei Zeilen
+
+[u]
+# vorherige Aktion wird rückgängig gemacht
+
+[U]
+# alle Änderungen auf der Zeile rückgängig machen
+
+[Strg+r]
+# Rückgängigmachungen rückgängig machen
+
+[p]
+# fügt eine gelöschte Zeile unterhalt des Cursors wieder ein
+
+[rx]
+# ersetzt den makierten Buchstaben mit x
+
+[ce]
+# löscht das Wort ab dem Cursor, öffnet den Einfügemodus, jetzt kann getippt werden

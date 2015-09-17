@@ -1,0 +1,12 @@
+|
+ls -l /etc | less
+	# durch das Pipezeichen( | ) wird das Ergebnis (die Ausgabe) des Befehls weitergeleitet in den Befehl 'less'
+	Dadurch kann ich eine Seitenweise Anzeige der Dateien und Ordner erzwingen
+
+>
+ls -l /etc > irgendein_name
+	# durch das '>' wird die Ausgabe in eine Datei umgeleitet. Falls die Datei existiert wird sie überschrieben, ansonsten neu erzeugt
+
+>>
+ls -l /etc >> irgendein_name
+	# 

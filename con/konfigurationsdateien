@@ -1,0 +1,18 @@
+Die Konfigurationsdateien liegen im Home-Verzeichnisses des jeweiligen Benutzers.
+Obwohl es sich bei der Konsole um ein Distributionsübergreifendes Programm handelt sind die Konfigurationsdateien bei jeder Distribution unterschiedlich
+
+.bash_history
+	- hier werden die letzen 500 Befehle gespeichert
+	- [Strg] + [R] + Befehl in der Konsole eingeben. Sucht den letzen so lautenden Befehl
+	- history -c
+
+.bash_logout
+	- wird nur verwendet, wenn der Benutzer über einen Login-Vorgang(Remote-Server) die Shell(bash) geöffnet hat. Beim Logout werden die Befehle der bash_logout ausgeführt
+
+.bash_profile
+	- siehe bash_logout. Die Befehle werden beim Login ausgeführt
+
+.bashrc
+	- vi .bashrc -> alias definieren( alias='cd /home/pan/Dokumente/lin' ) -> source .bashrc zum neu Laden der bashrc
+
+PATH	#definiert die Pfade zum Suchen ausführbarer Dateien

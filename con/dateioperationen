@@ -1,15 +1,45 @@
+change directory 
 cd Dokumente
-	# change directory in den Ordner Dokumente
+	# relativer Pfad; in den Ordner Dokumente
+cd /home/user/Dokumente
+	# absoluter Pfad; von der Wurzel '/' des Dateisystems anfangend
 cd ..
 	# ein Ordner zurück
-cd
-	# zurück ins Stammverzeichnis
+cd ~
+	# zurück ins Stammverzeichnis; bei Ubuntu reicht 'cd'
+cd ~/Dokumente
+	# navigiert, egal von wo, direkt nach /home/user/Dokumente
 
-mkdir
+mkdir verzeichnisname
+	# erzeugt ein Unterverzeichnis im aktuellen Verzeichnis
+mkdir /home/user/Dokumente/verzeichnisname
+	# Erzeugung eines Verzeichnis mit absoluter Pfadangabe
+
+touch neue_datei
+	# erstellt im aktuellen Verzeichnis eine neue Datei
 
 ls
+	# erzeugt eine Verzeichnisausgabe
+ls -l
+	# long; Auflistung als Liste
+ls -a
+	# alles ausgeben; auch die versteckten Dateien und Ordner
+ls -la
+	# alles ausǵeben in Listenform; auch die versteckten Dateien und Ordner
+ls -lt
+	# Sortierung nach dem Erstellungsdatum in Listenform; jüngstes Datum oben
 
 cp
+	# Copy-Befehl
+cp Quelle Ziel z.B. cp datei01 datei02
+	# die exestierende datei01 wird als datei02 im aktuellen Verzeichnis neu erzeugt oder überschrieben
+cp datei01 nach ~/Dokumente/datei01
+	# die Datei wird in das Verzeichnis Dokumente kopiert
+cp -r ordner01 ordner02
+	# das Verzeichnis(ordner01) inkl. Unterordner und Dateien wird an das Ziel Verzeichnis(ordner02) kopiert
+cp *.txt Unterverzeichniss/
+	# kopiert alle Dateien mit der Endung .txt in das Ziel-, Unterverzeichniss
+	# der Astersk(*) steht für beliebig viele Zeichen
 
 rm
 	# löscht Dateien und Verzeichnisse
@@ -17,3 +47,11 @@ rm
 	rm -rf eup_fit2ah
 		# -r rekursive: von hier an alle Verzeichnisse
 		# -f force: alles wird ohne Nachfrage gelöscht
+
+mv Quelle Ziel
+	# der Befehl wird zum Umbenennen und Verschieben von Dateien und Ordnern benutzt
+
+less datei_name
+	# zeigt die Datei datei_name seitenweise an
+	# weiterblättern mit der Leertaste
+	# beenden mit q
