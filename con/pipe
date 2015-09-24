@@ -9,4 +9,4 @@ ls -l /etc > irgendein_name
 
 >>
 ls -l /etc >> irgendein_name
-	# 
+	# der Dateiinhalt wird nicht überschrieben, sondern wird angehängt
