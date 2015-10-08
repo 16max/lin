@@ -55,3 +55,14 @@ less datei_name
 	# zeigt die Datei datei_name seitenweise an
 	# weiterblättern mit der Leertaste
 	# beenden mit q
+
+ln
+	ln quell ziel
+		# Es wird mit dem Befehl "ln" ein Link auf eine Datei erzeugt. Damit wird in der "Incode-Table" der Festplatte ein Verweis zwischen Namen <ziel> und der schon exestierenden Datei <quelle> erzeugt.
+		# Wird die Datei <ziel> geändert, ändert sich somit auch die Datei <quelle>
+		# Hardlink
+		# Wird benötigt bei der Installation von komplexen Programmen. Es wird dann ein Verweis auf die Programme im System erstellt, die das zu installierende Programm benötigt
+
+	ln -s quelle ziel
+		# symbolischer Link
+		# ein verzeichnis oder eine Quelle außerhalb der Festplatte können so integriert werden
