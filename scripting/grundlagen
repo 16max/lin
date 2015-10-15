@@ -1,0 +1,24 @@
+#!/bin/bash
+	# Shebang-Zeile am Anfang der Datei mit der Pfadangabe des Interpreters
+
+echo
+	echo "Das ist ein Test"
+		# erzeugt eine Ausgabe
+
+Datei ausführbar machen
+	chmod +x test.sh
+
+Datei ausführen
+	./test.sh
+		# es ist eine absolute Pfadangabe zum ausführen notwendig
+
+Variablen
+	Defeinition
+		letter(A-Z,a-z), number(0-9), underscore(_) sind möglich
+		Case-sensetive
+Variable deklarieren
+	var="Das ist ein Test"
+		# keine Leizeichen um das "="!!!
+Variable aufrufen
+	echo $var
+		# wenn die Variable ausgegeben werden soll muss ein "$" vor den Variablennamen geschrieben werden

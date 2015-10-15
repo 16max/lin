@@ -13,6 +13,8 @@ grep "^[AS]" MrOlympia.dat
 
 grep "\<Schwarzenegger\>" MrOlympia.dat
 	# sucht nach dem GANZEN Wort
+	# "\<" Start des Wortes
+	# "\>" Ende des Wortes
 
 grep "Schwarzeneg" MrOlympia.dat
 	# sucht nach einer Zeichenkette
