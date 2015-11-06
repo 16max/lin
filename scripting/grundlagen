@@ -22,3 +22,6 @@ Variable deklarieren
 Variable aufrufen
 	echo $var
 		# wenn die Variable ausgegeben werden soll muss ein "$" vor den Variablennamen geschrieben werden
+		Zuweisungsoperator reagiert negativ auf Leerzeichen 
+				Bsp.: var_name = "etwas" #problematisch
+							var_name="etwas" #besser bis gut
