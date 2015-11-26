@@ -1,0 +1,10 @@
+/etc/passwd
+	pan:x:1000:1000:pan,,,:/home/pan:/bin/bash
+	Username:Passwort:UserID:GroupID:pers.Info:Homeverzeichnis:Shell
+
+/etc/shadow
+	# Passworte der /etc/passwd verschlüsselt, Zugriff nur für root
+	pan:$6$YOQzWCaK$Rhz1FXKHUdkNDvtX5RqD2/4OyirKHMiYQ/aASBzV0DjyZrOq6qjhDiSZGdxwYPiZiOaWr/L4ObWdyplcI9/xX1:16183:0:99999:7:::
+
+/etc/group
+	# Liste der angelegten Gruppen

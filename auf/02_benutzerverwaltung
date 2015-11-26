@@ -1,0 +1,38 @@
+#Die Home-Ordner der Benutzer-Accounts sollen nach Gruppen sortiert angelegt werden.
+#Gruppe 1: /home/gruppe1 , Gruppe 2: /home/gruppe2
+cd /home
+sudo mkdir gruppe1
+sudo mkdir gruppe2
+
+sudo groupadd gruppe1
+sudo groupadd gruppe2
+
+#Alle User sollen am Anfang eine Datei "Allgemeine Hinweise" in Ihrem Heimatordner haben. #Nutzen Sie dafür die Möglichkeiten des Verzeichnisses /etc/skel.
+sudo touch /etc/skel/"Allgemeine Hinweise"
+
+#Legen Sie jeweils drei Benutzeraccounts mit den Namen "user1", "user2" ... bis "user6" an. #Dabei sollen bei den ersten drei Usern die neuen Home-Verzeichnisse so eingestellt werden, #daß sie unter /home/gruppe1 angelegt werden. Bei den Usern 4 bis 6 sollen die Home-#Verzeichnisse unter /home/gruppe2 angelegt werden.
+sudo useradd -m -d /home/gruppe1/user1 -g gruppe1 user1
+sudo useradd -mb /home/gruppe1/ -g gruppe1 user2
+sudo useradd -mb /home/gruppe1/ -g gruppe1 user3
+sudo useradd -mb /home/gruppe2/ -g gruppe1 user4
+sudo useradd -mb /home/gruppe2/ -g gruppe1 user5
+sudo useradd -mb /home/gruppe2/ -g gruppe1 user6
+
+#Fügen Sie nachträglich mit dem Kommando "usermod"eine Information in das GECOS-Feld User #ein:
+#für Gruppe 1: Hamburg
+sudo usermod -c Hamburg user1
+sudo usermod -c Hamburg user2
+sudo usermod -c Hamburg user3
+
+#für Gruppe 2: Frankfurt
+sudo usermod -c Frankfurt user4
+sudo usermod -c Frankfurt user5
+sudo usermod -c Frankfurt user6
+
+#Überprüfen Sie mit dem Programm "finger"
+finger user1
+finger user2
+finger user3
+finger user4
+finger user5
+finger user6

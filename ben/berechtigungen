@@ -1,0 +1,29 @@
+Dateien und Ordner haben Besitzer.
+	drwxrwxr-x  5 root gruppe1 4096 Nov 26 14:38 gruppe1
+	# In diesem Beispiel ist root der Besitzer und die Gruppe1 die Gruppe, die Besitzrechte an diesem ORdner hat.
+
+Ändern des Besitzers
+	sudo chown pan:gruppe2 gruppe1
+	# Nach diesem Befehl hat der Benutzer Pan und die Gruppe2 alle Besitzrechte an dem Ordner gruppe1
+
+Berechtigungen:
+r = read = 4
+w = write = 2
+x = execute = 1
+	Die 9 Buchstaben am Anfang der Dateicharakterisierung nach dem Befehl ls -l geben Auskunft über die vorhandenen Berechtigungen
+		drwxrwxr-x  5 root gruppe1 4096 Nov 26 14:38 gruppe1
+		# In diesem Fall hat
+			user root: rwx
+			group gruppe1: rwx
+			others: r-x
+			Others darf also nur lesen und ausführen
+
+Die berechtigungen sind intern in Zweierpotenzen organisiert
+Die Ziffer 3 entspricht dann der Berechtigung: -wx
+
+Ändern der Berechtigungen
+	sudo chmod 755 gruppe1
+	# Für den Ordner gruppe1 gelten dann folgende Berechtigungen:
+		Besitzer: Lesen, Schreiben, Ausführen
+		Gruppe: Lesen, Ausführen
+		Alle Anderen: Lesen, Ausführen
