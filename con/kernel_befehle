@@ -1,0 +1,74 @@
+uname -r
+	# kernel build herausfinden
+	->	3.13.0-68-generic
+
+lsb_release -a
+	# Informationen über das gerade laufende System
+	->	Distributor ID:	Ubuntu
+			Description:	Ubuntu 14.04.3 LTS
+			Release:	14.04
+			Codename:	trusty
+
+top
+	# Taskmanager
+
+ps aux | grep sublime
+	# listet die Prozesse von Sublime auf
+
+kill -9 Nr
+	# killt den Prozess
+
+less /proc/meminfo
+	# Informationen über den Arbeitsspeicher
+
+free -m
+	# Speicherübersicht /frei/belegt..
+
+ls /var/log
+	# Log-Dateien werden hier abgelegt
+
+tail -f  /var/log/syslog
+	# Livemitschnitt des Syslogs
+
+tail -100 /var/log/syslog
+	# zeigt die ersten 100 Einträge
+
+less /var/log/boot.log
+	# 
+
+sudo apt-get update
+	# Installation von Updates
+
+sudo apt-get install programmname
+	# Installiert ein neues Programm
+
+sudo apt-get remove programmname
+	# deinstalliert das Programm
+
+sudo apt-get autoremove programmname
+	# Deinstalliert das Programm und alle mit ihm verbundenden Pakete
+
+sudo apt-get dist-upgrade
+	# Distrubutionsupgrade
+
+dpkg -s vim
+
+dpkg -L vim
+
+dpkg-reconfigure keyboard-configuration
+	# Tastatureinstellungen ändern
+
+sudo lsblk
+
+sudo fdisk
+	# legt Partitionen an, löscht Partitionen, ändert Partitionen
+
+df -h
+	# Informationen
+
+du -hs /home/pan/*
+	Auflistung der "Eigenen Dateien" + Größe
+
+dd if=/Quellverzeichnis of=/Zielverzeichnis
+	# kopiert das Quellverzeichnis ins Zielverzeichnis
+
