@@ -1,0 +1,25 @@
+#!/bin/bash
+u=$USER
+
+sudo apt-get update --yes
+sudo apt-get install curl --yes
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+\curl -sSL https://get.rvm.io | bash
+source /home/$u/.rvm/scripts/rvm
+rvm get stable --autolibs=enable
+rvm install ruby-2.3.0
+rvm --default use ruby-2.3.0
+sudo apt-get install nodejs --yes
+gem update --system
+rvm gemset list
+rvm gemset use global
+gem list
+gem outdated
+gem update
+echo "gem: --no-document" >> ~/.gemrc
+gem install bundler
+gem install nokogiri
+gem install rails
+
+ruby -v
+rails -v
